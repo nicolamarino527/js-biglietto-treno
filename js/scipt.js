@@ -20,14 +20,14 @@ let price = lenght * 0.21;
 
 // 3-iseriamo le variabili del prezzo in base all'età:
 
-//-se l'età è compresa tra i 19 e i 64 anni il prezzo è invariato:
+//-se l'età è compresa tra i 18 e i 64 anni il prezzo è invariato:
 let discountPrice = price;
 
-//-se l'età é minore di 19 anni si attua uno sconto del 20%:
-if (age < 19) {
+//-se l'età é minore di 18 anni si attua uno sconto del 20%:
+if (age < 18) {
     discountPrice = price - (price * 20 / 100);
 
-//-se invece l'età é maggiore di 19 anni si attua uno sconto del 40%:
+//-se invece l'età é maggiore di 65 anni si attua uno sconto del 40%:
 } else if (age>65) {
     discountPrice = price - (price * 40 / 100);
 }
